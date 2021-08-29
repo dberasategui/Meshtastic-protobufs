@@ -444,17 +444,17 @@ message RadioConfig {
     /*
     * Enable/Disable the send data plugin measurement collection
     */
-    bool send_data_plugin_enabled = 148;
+    bool send_data_plugin_enabled = 149;
     /*
     * Enable/Disable the send data plugin on-device display
     */
-    bool send_data_plugin_screen_enabled = 149;
+    bool send_data_plugin_screen_enabled = 150;
     /* 
     
     * Interval in seconds of how often we should try to send our 
-    * measurements to the mesh
+    * data to the mesh
     */
-    uint32 send_data_plugin_update_interval = 150;
+    uint32 send_data_plugin_update_interval = 151;
     
   }
 
