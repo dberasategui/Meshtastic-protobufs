@@ -437,7 +437,25 @@ message RadioConfig {
      */
     uint32 environmental_measurement_plugin_sensor_pin = 147;
 
-
+    /**
+    Preferences for the Senddata Plugin
+    FIXME - Move this out of UserPreferences and into a section for plugin configuration.
+    */
+    /*
+    * Enable/Disable the send data plugin measurement collection
+    */
+    bool send_data_plugin_enabled = 148;
+    /*
+    * Enable/Disable the send data plugin on-device display
+    */
+    bool send_data_plugin_screen_enabled = 149;
+    /* 
+    
+    * Interval in seconds of how often we should try to send our 
+    * measurements to the mesh
+    */
+    uint32 send_data_plugin_update_interval = 150;
+    
   }
 
   UserPreferences preferences = 1;
